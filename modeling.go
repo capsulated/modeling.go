@@ -46,7 +46,7 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://localhost:8080", "http://localhost"},
+		AllowOrigins: []string{"http://localhost:8080", "http://localhost", "http://sci.logiq.one"},
 		//AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept, "X-Token"},
 		AllowMethods: []string{echo.GET},
 	}))
